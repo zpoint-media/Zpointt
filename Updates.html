@@ -1,0 +1,441 @@
+ <!-- https://www.svns.com/en/ -->
+  <!-- https://allsportdb.com/Competitions/World-Rugby-SVNS-206 -->
+   <!-- https://allsportdb.com/Countries/Canada -->
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Zpoint Sports – Premium Sports Media</title>
+
+ 
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Zpoint Sports</div>
+
+  <!-- IMPORTANT: Added ID so JS works -->
+  <div class="nav-links" id="navLinks">
+    <a href="Home.html">Home</a>
+    <a href="pages/About.html">About</a>
+    <a href="pages/Gallery.html">Gallery</a>
+    <a href="pages/Contact.html">Contact</a>
+  </div>
+
+  <div class="logo2"><img src="/images/Logo-removebg-preview.png" alt=""></div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        Zpoint Sports — Nigeria’s leading accredited sports media organization.
+        Official partners with FIFA, CAF, AFC, Commonwealth Games, and more.
+      </h1>
+
+      <div class="hero-buttons">
+        <button class="primary-btn">About Us</button>
+        <button class="ghost-btn">Contact Us</button>
+      </div>
+    </div>
+
+    <img src="images/Logoo.jpg" alt="Hero" />
+  </section>
+
+
+  <!-- UPCOMING EVENTS -->
+  <h2 class="section-title">Upcoming Events</h2>
+  <div class="events">
+    <div class="event-card">
+      <img src="/images/AFCN.png" />
+      <h3>2025 Africa Cup of Nations</h3>
+    </div>
+
+    <div class="event-card">
+      <img src="/images/WINTER.png" />
+      <h3>2026 Winter Olympics</h3>
+    </div>
+
+    <div class="event-card">
+      <img src="/images/Olympic2.jpg" />
+      <h3>Tokyo Olympics Track Race Events</h3>
+    </div>
+
+    
+  </div>
+
+    <div class="events">
+    <div class="event-card">
+      <img src="/images/AFCN.png" />
+      <h3>2025 Africa Cup of Nations</h3>
+    </div>
+
+    <div class="event-card">
+      <img src="/images/WINTER.png" />
+      <h3>2026 Winter Olympics</h3>
+    </div>
+
+    <div class="event-card">
+      <img src="/images/Olympic2.jpg" />
+      <h3>Tokyo Olympics Track Race Events</h3>
+    </div>
+
+    
+  </div>
+
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <h2 class="section-title">Gallery Preview</h2>
+
+    <div class="scroll-container">
+      <img src="/images/Gal1.jpeg" />
+      <img src="/images/Gal2.jpeg" />
+      <img src="/images/Gal3.jpeg" />
+      <img src="/images/Gal4.jpeg" />
+      <img src="/images/Gol.jpg" />
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2 class="section-title">Get in Touch</h2>
+
+    <form>
+      <input type="email" placeholder="Email Address" required />
+      <textarea rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Zpoint Sports — Developed by T-Codes
+   
+
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+  
+    /* =============== GLOBAL THEME =============== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+background: #000000;/* Soft clean light background */
+      color: #ffffff; /* Deep slate text */
+      overflow-x: hidden;
+    }
+
+    :root {
+      --primary: #2563eb; /* Elegant royal blue */
+      --secondary: #ffffff; /* Slate */
+      --accent: #ededed; /* Light cyan */
+      --card: #ffffff; /* White cards */
+      --soft: #f1f5f9; /* Soft grey */
+    }
+
+    /* Smooth animation */
+    html { scroll-behavior: smooth; }
+/* =============== NAVBAR BASE =============== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+      background: none;
+  backdrop-filter: blur(12px);
+        background: #1b1b1b;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+ 
+.logo2{ border-radius: 10px; } .logo2 img { height: 50px; margin-right: 55px; }
+/* ====== Desktop links ====== */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #000;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* Hamburger X Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLETS */
+@media (max-width: 1024px) {
+  nav {
+    padding: 15px 25px;
+  }
+}
+
+/* MOBILE MENU BEGINS */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide desktop menu */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    /* Glass dropdown */
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  /* Show dropdown when active */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+}
+
+/* SMALLER MOBILE */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
+    /* =============== HERO SECTION =============== */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 50px;
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    }
+
+    .hero-text {
+      max-width: 520px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 38px;
+    }
+
+    .hero-buttons button {
+      padding: 12px 26px;
+      border-radius: 10px;
+      border: none;
+      margin: 15px 15px 0 0;
+      font-size: 15px;
+      cursor: pointer;
+      transition: .25s;
+      font-weight: 600;
+    }
+
+    .primary-btn {
+      background: var(--primary);
+      color: white;
+    }
+
+    .primary-btn:hover { background: #1d4ed8; }
+
+    .ghost-btn {
+      background: var(--soft);
+      color: var(--secondary);
+    }
+
+    .ghost-btn:hover { background: #e2e8f0; }
+
+    /* =============== EVENT CARDS =============== */
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    .events {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 50px 0;
+    }
+
+    /* =============== GLASS EVENT CARDS =============== */
+.event-card {
+  width: 390px;
+  background: none;
+  border-radius: 18px;
+  margin-bottom: -50px;
+  backdrop-filter: blur(15px);                /* glass blur effect */
+  -webkit-backdrop-filter: blur(15px);
+  /* subtle glass border */
+  padding: 15px;
+  text-align: center;
+  transition: .3s;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.3);
+}
+
+ 
+
+    .event-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    /* =============== GALLERY SCROLLER =============== */
+    .gallery {
+      padding: 80px 0;
+ 
+    }
+
+    .scroll-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 20px;
+    }
+
+    .scroll-container img {
+      width: 280px;
+      height: 190px;
+      margin-right: 20px;
+      border-radius: 16px;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* =============== CONTACT SECTION =============== */
+    .contact {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .contact input, .contact textarea {
+      width: 80%;
+      max-width: 500px;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    .contact button {
+      padding: 15px 35px;
+      background: var(--primary);
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .contact button:hover { background: #1d4ed8; }
+
+    /* =============== FOOTER =============== */
+    footer {
+      text-align: center;
+      padding: 25px;
+ 
+      margin-top: 50px;
+      color: #475569;
+      font-size: 14px;
+    }
+ 

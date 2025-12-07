@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zpoint-Contact</title>
+    <link rel="shortcut icon" href="/images/Logo-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+  
+ 
+  
+  <nav>
+    <a class="Logo-a" href="/Home.html">
+          <div   class="logo">Zpoint Sports</div>
+    </a>
+
+     <div class="nav-links" id="navLinks">
+      <a href="/Home.html">Home</a>
+      <a href="/pages/About.html">About</a>
+      <a href="/pages/Gallary.html">Gallary</a>
+      <a href="/pages/Contact.html">Contact</a>
+       <a href="/pages/Events.html">Events</a>
+    </div>
+
+    <div class="logo2"><img src="/images/Logo-removebg-preview.png" alt=""></div>
+
+   <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+  
+  </nav>
+ <br>
+
+<section>
+  <div class="Contact-Section">
+    <div class="Contact-Section-img">
+
+      <div class="contact-wrapper">
+        
+        <!-- Left Side: Info -->
+        <div class="contact-info">
+          <h1>Get in Touch</h1>
+          <p>I’d love to hear from you! Fill out the form to start a conversation.</p>
+
+          <div class="contact-details">
+            <p><strong>Email :</strong>  Zpointsportmedia@gmail.com</p>
+            <p><strong>Number :</strong>  +234 802 351 5934</p>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61584033257679&mibextid=wwXIfr"><img src="/images/facebook.png" alt=""></a>
+            <a href=""><img src="/images/instagram.png" alt=""></a> 
+            <img src="/images/whatsapp.png" alt="">
+            <img src="/images/mail.png" alt="">
+          </div>
+        </div>
+
+        <!-- Right Side: Subscribe Form -->
+        <div class="contact-form">
+          <form 
+            id="subscribe-form"
+            action="https://formspree.io/f/mldagpdl"
+            method="POST"
+          >
+
+            <div class="form-row">
+              <input type="text" placeholder="First Name" required>
+              <input type="text" placeholder="Last Name" required>
+            </div>
+
+            <div class="input-section">
+              <input 
+                type="email" 
+                placeholder="Enter email address"
+                class="email-input"
+                name="email"
+                required
+              />
+
+              <!-- Hidden field to send the message -->
+              <input type="hidden" name="message" value="Subscribed to Zpoint Sports">
+
+              <button id="subscribe-button" class="subscribe-btn" type="submit">
+                Subscribe
+              </button>
+            </div>
+
+            <p id="subscribe-status" style="margin-top: 15px; font-weight: bold;"></p>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<p style="text-align:center; font-size:13px; color:#6b7280; margin:30px 0;">
+  © Website created by T-Codes — <a  >kolade443@gmail.com</a>
+</p>
+
+  
+
+<script src="/pages/Contact.js"></script>
+</body>
+</html>
